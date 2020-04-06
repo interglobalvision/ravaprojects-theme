@@ -58,6 +58,45 @@ function igv_register_theme_options_metabox() {
     // 'save_button'     => esc_html__( 'Save Theme Options', 'cmb2' ), // The text for the options-page save button. Defaults to 'Save'.
   ) );
 
+  // Design variables
+
+  $site_options->add_field( array(
+    'name'    => esc_html__( 'Design', 'cmb2' ),
+    'desc'    => esc_html__( '', 'cmb2' ),
+    'id'      => $prefix . 'design_title',
+    'type'    => 'title',
+  ) );
+
+  $site_options->add_field( array(
+    'name'    => esc_html__( 'Background color default', 'cmb2' ),
+    'id'      => 'design_bg_color',
+    'type'    => 'colorpicker',
+  ) );
+
+  $site_options->add_field( array(
+    'name'    => esc_html__( 'Font color default', 'cmb2' ),
+    'id'      => 'design_font_color',
+    'type'    => 'colorpicker',
+  ) );
+
+  $site_options->add_field( array(
+    'name'    => esc_html__( 'Navigation color', 'cmb2' ),
+    'id'      => 'design_nav_color',
+    'type'    => 'colorpicker',
+  ) );
+
+  $site_options->add_field( array(
+    'name'    => esc_html__( 'Navigation font color', 'cmb2' ),
+    'id'      => 'design_nav_font_color',
+    'type'    => 'colorpicker',
+  ) );
+
+  $site_options->add_field( array(
+    'name'    => esc_html__( 'Navigation logo image', 'cmb2' ),
+    'id'      => 'design_nav_logo',
+    'type'    => 'file',
+  ) );
+
   // Social Media variables
 
   $site_options->add_field( array(
@@ -92,6 +131,12 @@ function igv_register_theme_options_metabox() {
     'desc'    => esc_html__( 'Settings relating to open graph, facebook and twitter sharing, and other social media metadata', 'cmb2' ),
     'id'      => $prefix . 'og_title',
     'type'    => 'title',
+  ) );
+
+  $site_options->add_field( array(
+    'name'    => esc_html__( 'Mailchimp Form Action URL', 'cmb2' ),
+    'id'      => $prefix . 'mailchimp_url',
+    'type'    => 'text',
   ) );
 
   $site_options->add_field( array(

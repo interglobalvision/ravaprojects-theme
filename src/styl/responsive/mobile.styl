@@ -19,3 +19,55 @@ grid-maker(96%, $gutter, s)
 space-maker($margin-micro, $margin-tiny, $margin-small, $margin-basic, $margin-mid, $margin-large)
 
 font-sizes($font-size-basic, $font-size-extra, $font-size-large, $font-size-mid, $font-size-small, $font-size-tiny)
+
+#header
+  position: fixed
+  z-index: 500
+  bottom: 0
+  left: 0
+  width: auto
+  height: 100px
+  background-color: $color-white
+  border-radius: 0 50px 50px 0
+
+#main-nav
+  padding-right: $margin-tiny
+  img
+    height: 80px
+    width: auto
+
+.entry-content
+  width: calc(unquote('(100% / 12) * 8'))
+  margin-left: auto
+  margin-right: auto
+
+.entry-content > *
+  padding-left: $margin-tiny
+  padding-right: $margin-tiny
+
+.alignwide
+  margin-left: calc(unquote('(-100% / 12) * 1.5')) !important
+  margin-right: calc(unquote('(-100% / 12) * 1.5')) !important
+  max-width: calc(unquote('100% + ((100% / 12) * 3)'))
+  text-align: center
+
+.alignfull
+  margin-left: calc(unquote('(-100% / 12) * 3')) !important
+  margin-right: calc(unquote('(-100% / 12) * 3')) !important
+  max-width: calc(unquote('100% + ((100% / 12) * 6)'))
+  text-align: center
+
+h2,h3,h4,h5,h6
+  margin-bottom: 1rem
+  font-size: $font-size-mid
+  font-family: $font-serif
+
+button
+  appearance: none
+  border: 1px solid $color-black
+  background: $color-white
+  border-radius: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: $margin-tiny
