@@ -23,7 +23,7 @@ if (have_posts()) {
         <?php
           if ($post->post_name === 'acercade') {
         ?>
-        <div class="grid-item item-s-12 item-m-6 margin-bottom-basic">
+        <div class="grid-item item-s-12 item-m-6 margin-bottom-basic font-size-mid">
         <?php
           if (!empty($options['contact_email'])) {
         ?>
