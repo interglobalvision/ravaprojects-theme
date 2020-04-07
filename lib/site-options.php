@@ -97,6 +97,12 @@ function igv_register_theme_options_metabox() {
     'type'    => 'file',
   ) );
 
+  $site_options->add_field( array(
+    'name'    => esc_html__( 'Contact email', 'cmb2' ),
+    'id'      => 'contact_email',
+    'type'    => 'text',
+  ) );
+
   // Social Media variables
 
   $site_options->add_field( array(

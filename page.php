@@ -25,9 +25,16 @@ if (have_posts()) {
         ?>
         <div class="grid-item item-s-12 item-m-6 margin-bottom-basic">
         <?php
-            if (!empty($options['mailchimp_url'])) {
+          if (!empty($options['contact_email'])) {
         ?>
-          <div>
+          <div class="margin-bottom-small">
+            <a href="mailto:<?php echo $options['contact_email']; ?>"><?php echo $options['contact_email']; ?></a>
+          </div>
+        <?php
+          }
+          if (!empty($options['mailchimp_url'])) {
+        ?>
+          <div class="margin-bottom-small">
             <form id="mailchimp-form" class="grid-row margin-top-small" novalidate="true">
               <div class="grid-item item-s-12 margin-bottom-micro">Join our mailing list:</div>
               <div class="grid-item item-s-12 grid-row no-gutter">
@@ -42,7 +49,7 @@ if (have_posts()) {
             </form>
           </div>
         <?php
-            }
+          }
         ?>
         </div>
         <?php

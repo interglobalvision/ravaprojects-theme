@@ -46,6 +46,7 @@ get_template_part('partials/seo');
   <header id="header" class="grid-row align-items-center" style="background-color: <?php echo $nav_color; ?>; color: <?php echo $nav_font_color; ?>;">
     <?php
       $about_page = get_page_by_path( 'acercade' );
+      $options = get_site_option('_igv_site_options');
     ?>
     <nav id="main-nav">
       <ul class="grid-row align-items-center font-size-mid">
@@ -62,6 +63,11 @@ get_template_part('partials/seo');
         <li class="grid-item">
           <a href="<?php echo get_permalink($about_page->ID); ?>"><?php echo get_the_title($about_page->ID); ?></a>
         </li>
+        <?php if (!empty($options['socialmedia_instagram'])) { ?>
+        <li class="grid-item">
+          <a href="https://instagram.com/<?php echo $options['socialmedia_instagram']; ?>">insta</a>
+        </li>
+        <?php } ?>
       </ul>
     </nav>
   </header>
