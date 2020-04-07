@@ -9,8 +9,8 @@ $margin-large = ($gutter * 5)
 
 $font-size-extra = 24px
 $font-size-large = 21px
-$font-size-mid = 16px
-$font-size-basic = 12px
+$font-size-mid = 18px
+$font-size-basic = 14px
 $font-size-small = 10px
 $font-size-tiny = 8px
 
@@ -26,12 +26,11 @@ font-sizes($font-size-basic, $font-size-extra, $font-size-large, $font-size-mid,
   bottom: 0
   left: 0
   width: auto
-  height: 100px
-  background-color: $color-white
-  border-radius: 0 50px 50px 0
+  height: auto
+  background-color: transparent !important
 
 #main-nav
-  padding-right: $margin-tiny
+  padding: $margin-tiny
   img
     height: 80px
     width: auto
@@ -59,8 +58,13 @@ font-sizes($font-size-basic, $font-size-extra, $font-size-large, $font-size-mid,
 
 h2,h3,h4,h5,h6
   margin-bottom: 1rem
-  font-size: $font-size-mid
   font-family: $font-serif
+
+h2
+  font-size: $font-size-large
+
+h3,h4,h5,h6
+  font-size: $font-size-mid
 
 button
   appearance: none

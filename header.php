@@ -48,7 +48,7 @@ get_template_part('partials/seo');
       $about_page = get_page_by_path( 'acercade' );
     ?>
     <nav id="main-nav">
-      <ul class="grid-row align-items-center">
+      <ul class="grid-row align-items-center font-size-mid">
         <li class="grid-item">
           <a href="<?php echo home_url(); ?>">
           <?php if (!empty($nav_logo)) { ?>

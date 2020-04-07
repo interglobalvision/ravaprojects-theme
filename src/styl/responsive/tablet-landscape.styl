@@ -9,10 +9,10 @@
   $margin-mid = ($gutter * 3.5)
   $margin-large = ($gutter * 5)
 
-  $font-size-extra = 32px
-  $font-size-large = 28px
+  $font-size-extra = 36px
+  $font-size-large = 32px
   $font-size-mid = 21px
-  $font-size-basic = 16px
+  $font-size-basic = 18px
   $font-size-small = 14px
   $font-size-tiny = 10px
 
@@ -26,13 +26,16 @@
     display: initial !important
 
   #main-nav
-    padding-right: $margin-tiny
+    padding: $margin-tiny
 
   .entry-content > *
     padding-left: $margin-tiny
     padding-right: $margin-tiny
 
-  h2,h3,h4,h5,h6
+  h2
+    font-size: $font-size-large
+
+  h3,h4,h5,h6
     font-size: $font-size-mid
 
   button
