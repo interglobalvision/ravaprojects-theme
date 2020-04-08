@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <main id="main-content">
-  <section id="posts">
+  <section id="posts" class="container">
     <div class="grid-row">
 
 <?php
