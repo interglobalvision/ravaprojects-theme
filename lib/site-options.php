@@ -143,6 +143,7 @@ function igv_register_theme_options_metabox() {
     'name'    => esc_html__( 'Mailchimp Form Action URL', 'cmb2' ),
     'id'      => 'mailchimp_url',
     'type'    => 'text',
+    'default' => 'https://facebook.us17.list-manage.com/subscribe/post?u=744f7738d145e073e0ac8f781&amp;id=75d480d33b'
   ) );
 
   $site_options->add_field( array(
