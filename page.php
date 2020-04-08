@@ -14,7 +14,7 @@ if (have_posts()) {
 
       <article <?php post_class('grid-row padding-top-basic padding-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
 
-        <div class="grid-item item-s-12 item-m-6 margin-bottom-basic">
+        <div class="grid-item item-s-12 item-m-5 offset-m-1 margin-bottom-basic">
 
           <?php the_content(); ?>
 
