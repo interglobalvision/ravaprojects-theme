@@ -141,7 +141,7 @@ function igv_register_theme_options_metabox() {
 
   $site_options->add_field( array(
     'name'    => esc_html__( 'Mailchimp Form Action URL', 'cmb2' ),
-    'id'      => $prefix . 'mailchimp_url',
+    'id'      => 'mailchimp_url',
     'type'    => 'text',
   ) );
 

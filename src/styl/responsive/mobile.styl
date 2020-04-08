@@ -59,6 +59,7 @@ font-sizes($font-size-basic, $font-size-extra, $font-size-large, $font-size-mid,
 h2,h3,h4,h5,h6
   margin-bottom: 1rem
   font-family: $font-serif
+  font-weight: normal
 
 h2
   font-size: $font-size-large
@@ -66,12 +67,20 @@ h2
 h3,h4,h5,h6
   font-size: $font-size-mid
 
-button
+input, button
   appearance: none
   border: 1px solid $color-black
   background: $color-white
-  border-radius: 30px
   display: flex
   align-items: center
   justify-content: center
-  padding: $margin-tiny
+  padding: $margin-micro
+  font-weight: 300
+  font-size: $font-size-basic
+
+input
+  width: 100%
+
+button
+  cursor: pointer
+  border-radius: 30px

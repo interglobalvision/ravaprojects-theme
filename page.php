@@ -4,7 +4,7 @@ $options = get_site_option('_igv_site_options');
 ?>
 
 <main id="main-content">
-  <section id="page">
+  <section id="page" class="container">
 
 <?php
 if (have_posts()) {
@@ -23,31 +23,29 @@ if (have_posts()) {
         <?php
           if ($post->post_name === 'acercade') {
         ?>
-        <div class="grid-item item-s-12 item-m-6 margin-bottom-basic font-size-mid">
+        <div class="grid-item no-gutter item-s-12 item-m-6 margin-bottom-basic font-size-mid">
         <?php
           if (!empty($options['contact_email'])) {
         ?>
-          <div class="margin-bottom-small">
-            <a href="mailto:<?php echo $options['contact_email']; ?>"><?php echo $options['contact_email']; ?></a>
+          <div class="margin-bottom-small grid-row">
+            <div class="grid-item">
+              <a href="mailto:<?php echo $options['contact_email']; ?>"><?php echo $options['contact_email']; ?></a>
+            </div>
           </div>
         <?php
           }
           if (!empty($options['mailchimp_url'])) {
         ?>
-          <div class="margin-bottom-small">
-            <form id="mailchimp-form" class="grid-row margin-top-small" novalidate="true">
-              <div class="grid-item item-s-12 margin-bottom-micro">Join our mailing list:</div>
-              <div class="grid-item item-s-12 grid-row no-gutter">
-                <div class="grid-item item-s-5 item-m-3">
-                  <input id="mailchimp-email" type="email" placeholder="Email" name="EMAIL" class="item-s-5 item-m-3">
-                </div>
-                <div>
-                  <button id="mailchimp-submit" type="submit" class="font-bold u-pointer">Subscribe</button>
-                </div>
-              </div>
-              <div id="mailchimp-response" class="grid-item item-s-12 margin-top-micro">&nbsp;</div>
-            </form>
-          </div>
+          <form id="mailchimp-form" class="grid-row margin-bottom-small align-items-center" novalidate="true">
+            <div class="grid-item item-s-12 margin-bottom-micro">Suscríbete</div>
+            <div class="grid-item item-s-8 item-m-6">
+              <input id="mailchimp-email" type="email" placeholder="Email" name="EMAIL" class="item-s-5 item-m-3">
+            </div>
+            <div>
+              <button id="mailchimp-submit" type="submit">Subscribe</button>
+            </div>
+            <div id="mailchimp-response" class="grid-item item-s-12 item-m-10 margin-top-micro">&nbsp;</div>
+          </form>
         <?php
           }
         ?>
